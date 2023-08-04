@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Hackit</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="css/reset.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/header.css" />
+        <link rel="stylesheet" href="css/form.css" />
+    </head>
+    <body>
+        <!-- Header Start -->
+        <header class="site-header">
+            <div class="wrapper site-header__wrapper">
+                <div class="site-header__start">
+                    <nav class="nav">
+                        <button class="nav__toggle" aria-expanded="false" type="button">
+                            menu
+                        </button>
+                        <ul class="nav__wrapper">
+                            <li class="nav__item"><a onclick="location.href='index.html'">ホーム</a></li>
+                            <li class="nav__item"><a href="#">担当者確認</a></li>
+                            <li class="nav__item"><a href="#">お問い合わせ</a></li>
+                        </ul>
+                    </nav>
+                    <b href="#" class="brand">学生ステーション</b>
+                </div>
+                <div class="site-header__middle">
+                    <ul class="sub-nav">
+                        <li class=""><a onclick="location.href='index.html'">ホーム</a></li>
+                        <li class=""><a href="#">担当者確認</a></li>
+                        <li class=""><a href="#">お問い合わせ</a></li>
+                    </ul>
+                </div>
+                <div class="site-header__end">
+                    <a href="" class="button button--icon" aria-label="Sign in">
+                        <svg
+                            version="1.1"
+                            viewBox="0 0 100 100"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g>
+                                <path
+                                    d="m83.898 77.398c-2.3984-13-13.699-22.5-26.898-22.5h-13.699c-13.5 0-24.898 9.8008-27.102 23.102-1.1016 6.6992 4.1016 12.699 10.801 12.699h46.199c6.8008 0 12-6.1992 10.801-12.898z"
+                                />
+                                <path
+                                    d="m36.102 44.199c7.8008 7.8008 20.398 8 28.398 0.39844l0.19922-0.19922c6.8984-6.6016 7.6016-17.301 1.5-24.699-8.3008-10-23.699-9.8008-31.699 0.39844-5.6016 7.1992-5 17.5 1.5 24z"
+                                />
+                            </g>
+                        </svg>
+                        <span>Sign in</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+    <!-- Header End -->
+
+    <!-- Form Start -->
+    <section class="wrapper">
+        <div class="container">
+            <div class="content">
+                <h2 class="heading">貸出フォームへようこそ</h2>
+                <btn onclick="location.href='form.html'">学生証を登録する</btn>
+            </div>
+        </div>
+    </section>
+    <div class="Form">
+        <div class="Form-Item">
+            <p class="Form-Item-Label">
+                名前：
+            </p>
+            <h2 type="text" class="Form-Item-Input" placeholder="未登録">
+        </div>
+        <div class="Form-Item">
+            <p class="Form-Item-Label">
+                学籍番号：
+            </p>
+            <h2 type="text" class="Form-Item-Input" placeholder="未登録">
+        </div>
+        <table>
+            <tr>
+                <td>
+                    <div class="Form-Item">
+                        <p class="Form-Item-Label">
+                            <span class="Form-Item-Label-Required">必須</span>借り物：
+                        </p>
+                        <input type="text" class="Form-Item-Input" placeholder="例）モップ">
+                    </div>
+                </td>
+                <td>
+                    <div class="Form-Item">
+                        <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>個数：</p>
+                        <input type="text" class="Form-Item-Input" placeholder="例）2">
+                    </div>
+                </td>
+            </tr><tr>
+                <td>
+                    <div class="Form-Item">
+                        <p class="Form-Item-Label">
+                            <span class="Form-Item-Label-Required2">任意</span>借り物：
+                        </p>
+                        <input type="text" class="Form-Item-Input" placeholder="例）モップ">
+                    </div>
+                </td>
+                <td>
+                    <div class="Form-Item">
+                        <p class="Form-Item-Label"><span class="Form-Item-Label-Required2">任意</span>個数：</p>
+                        <input type="text" class="Form-Item-Input" placeholder="例）2">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="Form-Item">
+                        <p class="Form-Item-Label">
+                            <span class="Form-Item-Label-Required2">任意</span>借り物：
+                        </p>
+                        <input type="text" class="Form-Item-Input" placeholder="例）モップ">
+                    </div>
+                </td>
+                <td>
+                    <div class="Form-Item">
+                        <p class="Form-Item-Label"><span class="Form-Item-Label-Required2">任意</span>個数：</p>
+                        <input type="text" class="Form-Item-Input" placeholder="例）2">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="Form-Item">
+                        <p class="Form-Item-Label">
+                            <span class="Form-Item-Label-Required2">任意</span>借り物：
+                        </p>
+                        <input type="text" class="Form-Item-Input" placeholder="例）モップ">
+                    </div>
+                </td>
+                <td>
+                    <div class="Form-Item">
+                        <p class="Form-Item-Label"><span class="Form-Item-Label-Required2">任意</span>個数：</p>
+                        <input type="text" class="Form-Item-Input" placeholder="例）2">
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <input type="submit" class="Form-Btn" value="送信する">
+    </div>
+    
+    <!-- Form End -->
+
+        <!-- Footer Start -->
+        <footer class="footer">
+            <div class="md-flex md-justify-between">
+                <a href="#" class="footer__logo">
+                    <img src="img/KIT.png" width="120" height="50" />
+                </a>
+                <ul class="footer__navi flex">
+                    <li><a onclick="location.href='index.html'">ホーム</a></li>
+                    <li><a href="#">担当者確認</a></li>
+                    <li><a href="#">担当者変更</a></li>
+                </ul>
+            </div>
+            <hr />
+            <p class="copyright">
+                © 2023 <a href="#"></a> All Rights Reserved.
+            </p>
+        </footer>
+        <!-- Footer End -->
+
+        <script src="js/header.js"></script>
+    </body>
+</html>
