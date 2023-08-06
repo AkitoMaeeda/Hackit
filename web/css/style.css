@@ -71,3 +71,88 @@ body {
     min-width: initial;
     padding: 0.5rem;
 }
+
+.popup-content{
+    visibility: hidden;
+    opacity : 0;
+}
+
+#open:checked ~ .popup-content{
+    visibility: visible;
+    opacity : 1;
+    transition: .3s;
+}
+#open:checked ~ .overlay {
+    background: rgb(51, 51, 51,.8);
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .3s;
+    z-index: 9999;
+}
+
+.open-btn {
+    border-radius: 6px;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 280px;
+    display: block;
+    letter-spacing: 0.05em;
+    background: #2fa0f6;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+label.close-btn {
+    position: absolute;
+    top: -15px;
+    right: -14px;
+    background: #383c3c;
+    color: rgb(0, 136, 255);
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    border-radius: 50px;
+    line-height: 1.6;
+}
+
+.fa-times-circle {
+    position: relative;
+    top: -2px;
+    left: -2px;
+    font-size: 1.9em;
+    color: #ffffff;
+}
+
+.popup-content{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 800px;
+    height: auto;
+    background-color: aliceblue;
+    border: 5px solid #00bcd4;
+    z-index: 9999;
+    transition: .1s;
+    padding: 12%;
+    font-size: 20px;
+}
+
+@media (orientation: landscape){
+    .popup-content{
+        width: 55%;
+    }
+}
+
+
+input#open{display: none;}
+

@@ -13,7 +13,7 @@
     </head>
     <body>
         <!-- Header Start -->
-        <header class="site-header" id="header">
+        <header class="site-header" id=header>
             <div class="wrapper site-header__wrapper">
                 <div class="site-header__start">
                     <a1 onclick="location.href='index.html'">学生ステーション</a1>
@@ -41,7 +41,14 @@
                                 />
                             </g>
                         </svg>
-                        <span>担当者変更</span>
+                            <input id="open" type="checkbox">
+                            <label for="open" class="span">担当者変更</label>
+                            <label for="open" class="overlay"></label>
+                        
+                            <div class="popup-content">登録者カードを読み込ませてください
+                                <label for="open" class="close-btn"><i class="far fa-times-circle"></i></label>
+                            </div>
+
                     </a>
                 </div>
             </div>
