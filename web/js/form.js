@@ -39,7 +39,7 @@ function createNewTr() {
     newspan2.textContent = '任意';
 
     const newinput2 = document.createElement('input');
-    newinput2.type = 'text';
+    newinput2.type = 'number';
     newinput2.classList.add('Form-Item-Input');
 
     const newTdClose = document.createElement('td');
@@ -80,3 +80,4 @@ for (let j = 0; j < closeIcons.length; j++) {
 btn.addEventListener('click', () => {
     tbdy.appendChild(createNewTr());
 });
+

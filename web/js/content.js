@@ -49,11 +49,31 @@ function createNewLi(){
     newA.appendChild(newButton);
     newButton.appendChild(newSpan);
 
-    console.log(newLi);
+    newButton.addEventListener('click', () => {
+        newLi.remove();
+    });
+
     return newLi;
+}
+
+for (let j = 0; j < closeIcons.length; j++) {
+    closeIcons[j].addEventListener('click', () => {
+        items[j].remove();
+    });
 }
 
 // ボタンをクリックしたときの処理
 btn.addEventListener('click', () => {
     ulbody.appendChild(createNewLi());
 });
+
+function Delete(){
+    if(confirm("返却確認画面")){
+        closeIcons[j].addEventListener('click', () => {
+            items[j].remove();
+        });
+    }
+    else{
+        alert("作業が取り消されました。");
+    }
+} 

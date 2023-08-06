@@ -270,7 +270,7 @@ hr {
 }
 
 button {
-    width: 50%;
+    width: 10%;
     height: 2.5em;
     margin: 8px auto;
     padding: 4px 0;
@@ -326,7 +326,7 @@ label.close-btn {
     top: -15px;
     right: -14px;
     background: #383c3c;
-    color: aliceblue;
+    color: rgb(0, 136, 255);
     width: 26px;
     height: 26px;
     text-align: center;
@@ -339,7 +339,7 @@ label.close-btn {
     top: -2px;
     left: -2px;
     font-size: 1.9em;
-    color: #00bcd4;
+    color: #ffffff;
 }
 
 .popup-content{

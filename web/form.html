@@ -8,13 +8,14 @@
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/header.css" />
         <link rel="stylesheet" href="css/form.css" />
+        <link rel="icon" type="image/png" href="img/KITonly.png">
     </head>
     <body>
         <!-- Header Start -->
-        <header class="site-header">
+        <header class="site-header" id=header>
             <div class="wrapper site-header__wrapper">
                 <div class="site-header__start">
-                    <a onclick="location.href='index.html'">学生ステーション</a>
+                    <a1 onclick="location.href='index.html'">学生ステーション</a1>
                 </div>
                 <div class="site-header__middle">
                     <ul class="sub-nav">
@@ -39,7 +40,11 @@
                                 />
                             </g>
                         </svg>
-                        <span>担当者変更</span>
+                        <label for="open" class="span">担当者変更</span>
+                        <label for="open" class="overlay"></label>
+                        <div class="popup-content">登録者カードを読み込ませてください
+                            <label for="open" class="close-btn"><i class="far fa-times-circle"></i></label>
+                        </div>
                     </a>
                 </div>
             </div>
@@ -56,7 +61,7 @@
                     <input id="open" type="checkbox">
                     <label for="open" class="open-btn">学生証を登録する</label>
                     <label for="open" class="overlay"></label>
-                    <div class="popup-content">学生証を読み込ませてください
+                    <div class="popup-content">登録者カードを読み込ませてください
                         <label for="open" class="close-btn"><i class="far fa-times-circle"></i></label>
                     </div>
                 </div>
@@ -94,13 +99,13 @@
                             個数：
                             <span class="Form-Item-Label-Required">必須</span>
                         </p>
-                        <input type="text" class="Form-Item-Input" placeholder="例）2">
+                        <input type="number" class="Form-Item-Input" placeholder="例）2">
                     </div>
                 </td>
             </tr>
         </table>
         
-        <button>入力欄を増やす</button>
+        <button>+</button>
         <input type="submit" class="Form-Btn" value="送信する">
     </div>
     
@@ -110,17 +115,16 @@
         <footer class="footer">
             <div class="md-flex md-justify-between">
                 <a href="#" class="footer__logo">
-                    <img src="img/KIT.png" width="120" height="50" />
+                    <img src="img/KIT.png" width="120" height="60" />
                 </a>
                 <ul class="footer__navi flex">
-                    <li><a onclick="location.href='index.html'">ホーム</a></li>
-                    <li><a href="#">担当者確認</a></li>
-                    <li><a href="#">担当者変更</a></li>
+                    <li><a onclick="location.href='index.html'">ホームに戻る</a></li>
+                    <li><a href="#header">ページトップに移動</a></li>
                 </ul>
             </div>
             <hr />
             <p class="copyright">
-                © 2023 <a href="#"></a> All Rights Reserved.
+                金沢工業大学 |<a onclick="location.href='http://www.kanazawa-it.ac.jp/gstation/'">学生ステーション</a> 
             </p>
         </footer>
         <!-- Footer End -->

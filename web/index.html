@@ -9,13 +9,14 @@
         <link rel="stylesheet" href="css/header.css" />
         <link rel="stylesheet" href="css/content.css" />
         <link rel="stylesheet" href="css/footer.css" />
+        <link rel="icon" type="image/png" href="img/KITonly.png">
     </head>
     <body>
         <!-- Header Start -->
-        <header class="site-header">
+        <header class="site-header" id="header">
             <div class="wrapper site-header__wrapper">
                 <div class="site-header__start">
-                    <a onclick="location.href='index.html'">学生ステーション</a>
+                    <a1 onclick="location.href='index.html'">学生ステーション</a1>
                 </div>
                 <div class="site-header__middle">
                     <ul class="sub-nav">
@@ -52,7 +53,7 @@
         <section class="wrapper">
             <div class="container">
                 <div class="content">
-                    <h2 class="heading">学生ステーション貸出サイト</h2>
+                    <h2 class="heading">学生ステーション貸出管理</h2>
                     <btn onclick="location.href='form.html'">貸出登録はこちら</btn>
                 </div>
             </div>
@@ -60,15 +61,15 @@
         <h1>貸出物リスト</h1>
         <ul id = "list" class="news-list">
             <li class="item">
-                <a href="#">
+                <b href="#">
                     <p class="date">日付</p>
                     <p class="name">借用者名</p>
                     <p class="id">学籍番号</p>
                     <p class="things">借用物</p>
                     <p class="num">個数</p>
                     <p class="user">担当者</p>
-                    <button class="category"><span>返却</span></button>
-                </a>
+                    <box class="category"><span>返却ボタン↓</box>
+                </b>
             </li>
         </ul>
         <button id = "aaaa">入力欄を増やす</button>
@@ -79,17 +80,15 @@
     <footer class="footer">
         <div class="md-flex md-justify-between">
             <a href="#" class="footer__logo">
-                <img src="img/KIT.png" width="120" height="50" />
+                <img src="img/KIT.png" width="120" height="60" />
             </a>
             <ul class="footer__navi flex">
-                <li><a onclick="location.href='index.html'">ホーム</a></li>
-                <li><a href="#">担当者確認</a></li>
-                <li><a href="#">担当者変更</a></li>
+                <li><a href="#header">ページトップに戻る</a></li>
             </ul>
         </div>
         <hr />
         <p class="copyright">
-            © 2023 <a href="#"></a> All Rights Reserved.
+            金沢工業大学 |<a onclick="location.href='http://www.kanazawa-it.ac.jp/gstation/'">学生ステーション</a>
         </p>
     </footer>
     <!-- Footer End -->
