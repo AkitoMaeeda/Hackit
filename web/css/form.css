@@ -140,7 +140,7 @@
     padding-right: 1em;
     height: 48px;
     flex: 1;
-    width: 100%;
+    width: 200px;
     max-width: 410px;
     background: #eaedf2;
     font-size: 18px;
@@ -268,3 +268,19 @@ hr {
         text-align: left;
     }
 }
+
+button {
+    width: 10%;
+    height: 2.5em;
+    margin: 8px auto;
+    padding: 4px 0;
+    border-radius: 4px;
+    background-color: #a1a1a1;
+    color: white;
+}
+
+button:hover {
+    opacity: .7;
+}
+
+

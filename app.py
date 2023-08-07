@@ -1,4 +1,6 @@
 import eel
+import DBconnect
+import Scan
 
 def main():
     eel.init("web")

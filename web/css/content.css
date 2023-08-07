@@ -58,12 +58,23 @@ btn {
         border-bottom: 1px solid #CCC;
         padding: 20px 20px;
     }
+
+        .news-list .item b{
+        display: flex;
+        flex-wrap: wrap;
+        flex-wrap: nowrap;
+        text-decoration: none;
+        color: #333;
+        border-bottom: 1px solid #CCC;
+        padding: 20px 20px;
+    }
+
     .news-list .item:first-child a{
         border-top: 1px solid #CCC;
     }
     .news-list .item .date{
         margin: 0;
-        min-width: 140px;
+        min-width: 200px;
         font-size: 16px;
         color: #999;
         padding: 0 20px 0 0;
@@ -80,11 +91,32 @@ btn {
         font-size: 14px;
         line-height: 1;
     }
-    .news-list .item .title{
+    .news-list .item .name{
         margin: 0;
-        width: 100%;
+        width: 20%;
     }
-    .news-list .item a:hover .title{
+
+    .news-list .item .id{
+        margin: 0;
+        width: 20%;
+    }
+
+    .news-list .item .things{
+        margin: 0;
+        width: 20%;
+    }
+
+    .news-list .item .num{
+        margin: 0;
+        width: 20%;
+    }
+
+    .news-list .item .user{
+        margin: 0;
+        width: 20%;
+    }
+
+    .news-list .item a:hover {
         color: #00F;
     }
     
